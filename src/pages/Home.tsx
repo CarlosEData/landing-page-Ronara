@@ -5,9 +5,18 @@ export default function Home() {
   return (
     <div className="bg-light">
       <section className="relative min-h-screen flex items-center bg-black text-light overflow-hidden">
+        <div className="absolute inset-0 md:relative md:hidden">
+          <img
+            src="/image.png"
+            alt="Ronara Lamounier"
+            className="w-full h-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/90"></div>
+        </div>
+
         <div className="w-full relative z-10">
           <div className="grid md:grid-cols-2 items-center">
-            <div className="space-y-6 animate-fade-in px-4 sm:px-6 lg:px-12 xl:px-24 py-12">
+            <div className="space-y-6 animate-fade-in px-4 sm:px-6 lg:px-12 xl:px-24 py-12 relative z-10">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-title leading-tight">
                 Especialista em Transformação Estratégica: Ordem no caos para a estratégia virar entrega real.
               </h1>
@@ -32,7 +41,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="order-first md:order-last">
+            <div className="hidden md:block">
               <div className="relative bg-black">
                 <img
                   src="/image.png"
