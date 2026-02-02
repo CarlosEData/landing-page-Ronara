@@ -1,381 +1,241 @@
-import { ArrowRight, Award, Target, Users, Lightbulb, Gauge, CheckCircle2 } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Sobre() {
-  const scrollToBio = () => {
-    const element = document.getElementById('jornada');
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <div className="bg-light">
-      <section className="relative min-h-screen flex items-center justify-center bg-primary text-light overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-gradient-to-br from-silver/10 to-transparent"></div>
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold to-transparent"></div>
-          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold to-transparent"></div>
-        </div>
-
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div className="order-2 md:order-1 space-y-8 animate-fade-in">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-title uppercase tracking-wider leading-tight">
-                A Arquiteta de Decisões
-              </h1>
-              <h2 className="text-xl md:text-2xl text-silver leading-relaxed">
-                <span className="font-semibold text-light">Ronara Lamounier</span> é conhecida como a{' '}
-                <span className="italic">'McKinsey de uma mulher só'</span>. Ela não separa a lógica corporativa da alma humana.
-              </h2>
-              <p className="text-lg text-silver leading-relaxed">
-                Com um histórico de <span className="text-gold font-semibold">destravar operações bilionárias</span>, ela hoje
-                aplica sua <span className="italic font-semibold">Engenharia de Consciência</span> para eliminar a paralisia de
-                líderes e empresas que sabem que podem mais, mas estão travados no 'ruído'.
-              </p>
-              <button
-                onClick={scrollToBio}
-                className="inline-flex items-center space-x-2 bg-gold text-primary px-8 py-4 hover:bg-gold/90 transition-colors font-semibold uppercase tracking-wider group"
-              >
-                <span>Conheça minha jornada</span>
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-              </button>
-            </div>
-
-            <div className="order-1 md:order-2">
-              <div className="bg-silver/10 border-2 border-gold p-2">
-                <div className="bg-primary h-[500px] flex items-center justify-center text-light">
-                  <div className="text-center">
-                    <div className="text-8xl font-title mb-6">RL</div>
-                    <div className="text-sm tracking-widest mb-2">RONARA LAMOUNIER</div>
-                    <div className="text-xs text-silver">ENGENHARIA DE CONSCIÊNCIA</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="w-6 h-10 border-2 border-silver/50 rounded-full flex items-start justify-center p-2">
-            <div className="w-1 h-3 bg-gold rounded-full animate-bounce"></div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 md:py-32 bg-light border-y border-primary/10">
+      <section className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-title uppercase tracking-wider mb-12">
-              Essência da Marca
-            </h2>
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-              <div className="bg-primary text-gold px-6 py-3 text-xl font-title tracking-wider">CONTRIBUIÇÃO</div>
-              <div className="bg-primary text-gold px-6 py-3 text-xl font-title tracking-wider">RESULTADOS</div>
-              <div className="bg-primary text-gold px-6 py-3 text-xl font-title tracking-wider">ACESSIBILIDADE</div>
-            </div>
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-title uppercase tracking-wider text-center mb-12">
+              Clareza para decisões em contextos de alta complexidade
+            </h1>
 
-            <div className="grid md:grid-cols-3 gap-8 mt-16">
-              <div className="bg-white border border-primary/20 p-8">
-                <div className="w-16 h-16 bg-primary flex items-center justify-center mb-6 mx-auto">
-                  <Award size={32} className="text-gold" />
-                </div>
-                <h3 className="text-xl font-title uppercase mb-3 tracking-wider">Madura</h3>
-                <p className="text-silver text-sm">Experiência consolidada em transformação organizacional de alto nível.</p>
-              </div>
-
-              <div className="bg-white border border-primary/20 p-8">
-                <div className="w-16 h-16 bg-primary flex items-center justify-center mb-6 mx-auto">
-                  <Target size={32} className="text-gold" />
-                </div>
-                <h3 className="text-xl font-title uppercase mb-3 tracking-wider">Didática</h3>
-                <p className="text-silver text-sm">Capacidade de traduzir complexidade em ações práticas e aplicáveis.</p>
-              </div>
-
-              <div className="bg-white border border-primary/20 p-8">
-                <div className="w-16 h-16 bg-primary flex items-center justify-center mb-6 mx-auto">
-                  <Users size={32} className="text-gold" />
-                </div>
-                <h3 className="text-xl font-title uppercase mb-3 tracking-wider">Flexível</h3>
-                <p className="text-silver text-sm">Adaptação estratégica às necessidades únicas de cada organização.</p>
-              </div>
-
-              <div className="bg-white border border-primary/20 p-8">
-                <div className="w-16 h-16 bg-primary flex items-center justify-center mb-6 mx-auto">
-                  <Lightbulb size={32} className="text-gold" />
-                </div>
-                <h3 className="text-xl font-title uppercase mb-3 tracking-wider">Criativa</h3>
-                <p className="text-silver text-sm">Soluções inovadoras que vão além do convencional.</p>
-              </div>
-
-              <div className="bg-white border border-primary/20 p-8">
-                <div className="w-16 h-16 bg-primary flex items-center justify-center mb-6 mx-auto">
-                  <Gauge size={32} className="text-gold" />
-                </div>
-                <h3 className="text-xl font-title uppercase mb-3 tracking-wider">Prática</h3>
-                <p className="text-silver text-sm">Foco em execução e resultados mensuráveis, não apenas teoria.</p>
-              </div>
-
-              <div className="bg-white border border-primary/20 p-8">
-                <div className="w-16 h-16 bg-primary flex items-center justify-center mb-6 mx-auto">
-                  <CheckCircle2 size={32} className="text-gold" />
-                </div>
-                <h3 className="text-xl font-title uppercase mb-3 tracking-wider">Organizada</h3>
-                <p className="text-silver text-sm">Estrutura metódica que garante clareza e previsibilidade.</p>
-              </div>
-            </div>
-
-            <div className="mt-16 bg-primary text-light p-8 md:p-12 border-l-4 border-gold">
-              <p className="text-lg md:text-xl leading-relaxed">
-                <span className="font-semibold">Estratégia:</span> Levar informações e soluções via{' '}
-                <span className="text-gold font-semibold">Métodos Ágeis</span> no digital, mostrando sua eficácia no meio
-                empresarial para gerar resultados reais, transformando desafios em oportunidades através de eficiência e inovação.
+            <div className="space-y-6 text-silver leading-relaxed">
+              <p>
+                Sou consultora de transformação organizacional, com mais de duas décadas de atuação em ambientes onde as decisões têm impacto direto e a execução precisa se sustentar no tempo.
+              </p>
+              <p>
+                Atuo tanto em contextos organizacionais quanto na vida prática, quando o ruído compromete a clareza e dificulta avanço consistente.
+              </p>
+              <p>
+                Organizo pessoas, prioridades e execução para que decisões sejam tomadas com critério e responsabilidade.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="jornada" className="py-20 md:py-32 bg-primary text-light">
+      <section className="py-20 md:py-32 bg-light">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-title uppercase tracking-wider text-center mb-6">
-              De Desenvolvedora a Líder em Transformação Organizacional
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-title uppercase tracking-wider text-center mb-12">
+              Quando meu trabalho faz sentido para mim
             </h2>
-            <p className="text-xl text-silver text-center mb-16 max-w-3xl mx-auto">
-              Uma jornada de 25 anos construindo expertise em tecnologia, gestão e métodos ágeis.
-            </p>
 
-            <div className="space-y-12">
-              <div className="flex items-start space-x-6 border-l-2 border-gold pl-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-gold flex items-center justify-center">
-                  <div className="text-primary font-title text-2xl">01</div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-title uppercase tracking-wider mb-3">Raízes em Divinópolis</h3>
-                  <p className="text-silver leading-relaxed">
-                    Nascida em <span className="text-light font-semibold">Divinópolis-MG</span>, em uma família amorosa, Ronara
-                    cresceu com a influência marcante de sua avó. Desde cedo, demonstrou interesse pela mente humana, inicialmente
-                    inclinada para a psicologia. Foi na <span className="text-gold font-semibold">adolescência</span> que descobriu
-                    sua verdadeira paixão: a <span className="text-gold font-semibold">tecnologia</span>.
-                  </p>
-                </div>
+            <div className="mb-12 text-center">
+              <p className="text-lg md:text-xl text-primary leading-relaxed mb-4">
+                Ao longo da minha trajetória, aprendi a reconhecer com bastante clareza onde minha atuação realmente gera valor.
+              </p>
+              <p className="text-lg md:text-xl text-primary leading-relaxed">
+                Não é em qualquer contexto. E nem com qualquer tipo de demanda.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-white border border-primary/20 p-8">
+                <h3 className="text-2xl font-title mb-6 text-primary">
+                  Eu entro quando percebo que:
+                </h3>
+                <ul className="space-y-4 text-silver">
+                  <li className="flex items-start">
+                    <span className="text-gold mr-3 mt-1">•</span>
+                    <span>existe esforço, mas falta direção</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold mr-3 mt-1">•</span>
+                    <span>as decisões se acumulam e não há clareza de critérios</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold mr-3 mt-1">•</span>
+                    <span>o ruído começa a consumir energia, foco e confiança</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold mr-3 mt-1">•</span>
+                    <span>a sensação é de movimento constante, mas pouco avanço real</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold mr-3 mt-1">•</span>
+                    <span>há desejo e disposição real para mudança</span>
+                  </li>
+                </ul>
               </div>
 
-              <div className="flex items-start space-x-6 border-l-2 border-gold pl-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-gold flex items-center justify-center">
-                  <div className="text-primary font-title text-2xl">02</div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-title uppercase tracking-wider mb-3">Início em São Paulo</h3>
-                  <p className="text-silver leading-relaxed">
-                    Aos <span className="text-gold font-semibold">19 anos</span>, mudou-se para São Paulo em busca de crescimento
-                    profissional. Iniciou sua carreira como <span className="text-light font-semibold">desenvolvedora</span>,
-                    mergulhando no universo da programação e sistemas. Foi nesse período que começou a entender a interseção entre
-                    tecnologia e processos organizacionais.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-6 border-l-2 border-gold pl-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-gold flex items-center justify-center">
-                  <div className="text-primary font-title text-2xl">03</div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-title uppercase tracking-wider mb-3">O Ponto de Virada: Mentoria de Alexandre Notte</h3>
-                  <p className="text-silver leading-relaxed mb-4">
-                    Em <span className="text-gold font-semibold">2004</span>, sua vida profissional tomou uma direção transformadora.
-                    Foi mentorada por <span className="text-light font-semibold">Alexandre Notte</span>, que lhe presenteou com um
-                    kit simbólico de gestão de projetos: <span className="italic">um livro, uma caneta e post-its</span>.
-                  </p>
-                  <div className="bg-primary/50 backdrop-blur-sm border border-silver/20 p-6">
-                    <p className="text-light leading-relaxed">
-                      Esse momento foi sua introdução ao <span className="text-gold font-semibold">PMI (Project Management Institute)</span>
-                      {' '}e ao conceito de <span className="text-gold font-semibold">PMP (Project Management Professional)</span>.
-                      A partir daí, Ronara compreendeu que tecnologia sem gestão estratégica era apenas código sem propósito.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-6 border-l-2 border-gold pl-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-gold flex items-center justify-center">
-                  <div className="text-primary font-title text-2xl">04</div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-title uppercase tracking-wider mb-3">Formação de Elite</h3>
-                  <p className="text-silver leading-relaxed mb-4">
-                    Dedicou-se intensamente aos estudos, combinando rigor técnico com visão estratégica:
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-start space-x-3">
-                      <CheckCircle2 size={20} className="text-gold mt-1 flex-shrink-0" />
-                      <span className="text-silver">
-                        <span className="text-light font-semibold">ESPM</span> - Estudos intensos em gestão empresarial
-                      </span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <CheckCircle2 size={20} className="text-gold mt-1 flex-shrink-0" />
-                      <span className="text-silver">
-                        Graduação em <span className="text-light font-semibold">Sistemas de Informação</span>
-                      </span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <CheckCircle2 size={20} className="text-gold mt-1 flex-shrink-0" />
-                      <span className="text-silver">
-                        Extensão na <span className="text-light font-semibold">USP</span> em metodologias ágeis
-                      </span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <CheckCircle2 size={20} className="text-gold mt-1 flex-shrink-0" />
-                      <span className="text-silver">
-                        Pós-graduação em <span className="text-light font-semibold">Gestão de Negócios e Marketing pela ESPM</span>
-                      </span>
-                    </li>
-                    <li className="flex items-start space-x-3">
-                      <CheckCircle2 size={20} className="text-gold mt-1 flex-shrink-0" />
-                      <span className="text-silver">
-                        Duas <span className="text-light font-semibold">formações internacionais de coaching</span>
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-6 border-l-2 border-gold pl-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-gold flex items-center justify-center">
-                  <div className="text-primary font-title text-2xl">05</div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-title uppercase tracking-wider mb-3">Ascensão Meteórica</h3>
-                  <p className="text-silver leading-relaxed mb-4">
-                    Sua progressão de carreira foi implacável: de coordenadora a{' '}
-                    <span className="text-gold font-semibold">gerente de portfólios</span> (o nível mais alto pelo PMI). Conquistou a
-                    cobiçada <span className="text-light font-semibold">certificação PMP</span>, reconhecida globalmente como o padrão
-                    de excelência em gestão de projetos.
-                  </p>
-                  <div className="bg-gold/10 border-l-4 border-gold p-6">
-                    <p className="text-light leading-relaxed">
-                      "Não basta gerenciar projetos. É preciso orquestrar <span className="italic">transformações</span>."
-                    </p>
-                    <p className="text-silver text-sm mt-2">— Ronara Lamounier</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-6 border-l-2 border-gold pl-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-gold flex items-center justify-center">
-                  <div className="text-primary font-title text-2xl">06</div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-title uppercase tracking-wider mb-3">Impacto em Gigantes Corporativos</h3>
-                  <p className="text-silver leading-relaxed mb-4">
-                    Gerenciou projetos estratégicos de alto impacto em algumas das maiores organizações do Brasil e do mundo:
-                  </p>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <div className="bg-primary/50 border border-silver/20 p-4 text-center">
-                      <div className="text-gold font-title text-lg">BANCO DO BRASIL</div>
-                    </div>
-                    <div className="bg-primary/50 border border-silver/20 p-4 text-center">
-                      <div className="text-gold font-title text-lg">VALE</div>
-                    </div>
-                    <div className="bg-primary/50 border border-silver/20 p-4 text-center">
-                      <div className="text-gold font-title text-lg">LIGHT</div>
-                    </div>
-                    <div className="bg-primary/50 border border-silver/20 p-4 text-center">
-                      <div className="text-gold font-title text-lg">FIAT</div>
-                    </div>
-                    <div className="bg-primary/50 border border-silver/20 p-4 text-center">
-                      <div className="text-gold font-title text-lg">FLEURY</div>
-                    </div>
-                    <div className="bg-primary/50 border border-silver/20 p-4 text-center">
-                      <div className="text-gold font-title text-lg">SANTANDER</div>
-                    </div>
-                    <div className="bg-primary/50 border border-silver/20 p-4 text-center">
-                      <div className="text-gold font-title text-lg">MICROSOFT</div>
-                    </div>
-                    <div className="bg-primary/50 border border-silver/20 p-4 text-center">
-                      <div className="text-gold font-title text-lg">GPA</div>
-                    </div>
-                    <div className="bg-primary/50 border border-silver/20 p-4 text-center">
-                      <div className="text-gold font-title text-lg">BMG</div>
-                    </div>
-                    <div className="bg-primary/50 border border-silver/20 p-4 text-center">
-                      <div className="text-gold font-title text-lg">TEMPO ASSIST</div>
-                    </div>
-                    <div className="bg-primary/50 border border-silver/20 p-4 text-center">
-                      <div className="text-gold font-title text-lg">GRUPO MARISTA</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-6 border-l-2 border-gold pl-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-gold flex items-center justify-center">
-                  <div className="text-primary font-title text-2xl">07</div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-title uppercase tracking-wider mb-3">A Revolução Ágil</h3>
-                  <p className="text-silver leading-relaxed mb-4">
-                    Desde <span className="text-gold font-semibold">2009</span>, Ronara é apaixonada por{' '}
-                    <span className="text-light font-semibold">agilidade</span>. Incorporou práticas ágeis em sua expertise tradicional
-                    de gestão, criando uma abordagem híbrida que combina o rigor do PMI com a flexibilidade do Agile.
-                  </p>
-                  <p className="text-silver leading-relaxed">
-                    Em <span className="text-gold font-semibold">2015</span>, tornou-se{' '}
-                    <span className="text-light font-semibold">Agile Coach no Walmart.com</span>, liderando a transformação digital
-                    de um dos maiores varejistas do mundo. Depois, levou sua metodologia para Santander, Microsoft e outras gigantes.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-6 border-l-2 border-gold pl-6">
-                <div className="flex-shrink-0 w-16 h-16 bg-gold flex items-center justify-center">
-                  <div className="text-primary font-title text-2xl">08</div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-title uppercase tracking-wider mb-3">Missão e Legado</h3>
-                  <p className="text-silver leading-relaxed mb-4">
-                    Movida pela paixão de <span className="text-gold font-semibold">compartilhar conhecimentos</span>, Ronara dedica-se
-                    a ajudar profissionais e organizações com práticas ágeis para mudanças duradouras.
-                  </p>
-                  <div className="bg-gold text-primary p-8">
-                    <p className="text-xl font-semibold mb-2">Objetivo</p>
-                    <p className="leading-relaxed">
-                      Preparar e impactar mais profissionais em suas carreiras e organizações, transformando paralisia em execução e
-                      caos em lucro através da Engenharia de Consciência.
-                    </p>
-                  </div>
-                </div>
+              <div className="bg-white border border-primary/20 p-8">
+                <h3 className="text-2xl font-title mb-6 text-primary">
+                  Eu não entro quando:
+                </h3>
+                <ul className="space-y-4 text-silver">
+                  <li className="flex items-start">
+                    <span className="text-gold mr-3 mt-1">•</span>
+                    <span>a expectativa é que alguém resolva no lugar do outro</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold mr-3 mt-1">•</span>
+                    <span>se há busca por um método pronto para evitar decisões difíceis</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold mr-3 mt-1">•</span>
+                    <span>não há disposição real para rever prioridades</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold mr-3 mt-1">•</span>
+                    <span>a clareza é desejada, mas não sustentada</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold mr-3 mt-1">•</span>
+                    <span>a mudança é desejada, mas não há disposição real para mudar</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-light">
+      <section className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl font-title uppercase tracking-wider mb-8">
-              Pronto para sua transformação?
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-title uppercase tracking-wider text-center mb-12">
+              Quem sou eu
             </h2>
-            <p className="text-xl text-silver mb-12">
-              Descubra como a Engenharia de Consciência pode destravar seus resultados.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/consultoria"
-                className="inline-flex items-center justify-center space-x-2 bg-primary text-light px-8 py-4 hover:bg-primary/90 transition-colors font-semibold uppercase tracking-wider"
-              >
-                <span>Consultoria Corporativa</span>
-                <ArrowRight size={20} />
-              </Link>
-              <Link
-                to="/mentoria"
-                className="inline-flex items-center justify-center space-x-2 bg-gold text-primary px-8 py-4 hover:bg-gold/90 transition-colors font-semibold uppercase tracking-wider"
-              >
-                <span>Mentoria de Carreira</span>
-                <ArrowRight size={20} />
-              </Link>
+
+            <div className="space-y-6 text-silver leading-relaxed mb-12">
+              <p>
+                Sou consultora de transformação organizacional, com mais de 25 anos de atuação em ambientes onde a complexidade não é conceito, é prática diária.
+              </p>
+              <p>
+                Minha trajetória foi construída em organizações grandes, estruturas densas e contextos em que decisões mal tomadas custam caro, seja em tempo, dinheiro ou pessoas.
+              </p>
+              <p>
+                Ao longo desse percurso, aprendi que a maioria dos problemas não está na falta de esforço ou competência, mas na ausência de clareza, critério e direção.
+              </p>
+              <p>
+                É essa experiência que hoje orienta a forma como atuo. Não para decidir pelo outro, mas para organizar o campo onde decisões precisam ser feitas com responsabilidade.
+              </p>
+              <p>
+                Com o tempo, passei a aplicar essa mesma lógica não apenas em contextos organizacionais, mas também em contextos de vida e decisão pessoal, onde o ruído costuma ser mais silencioso, mas igualmente paralisante.
+              </p>
+              <p>
+                Além da atuação direta como consultora, sou fundadora da InnovaSmart e sócia da 123 Ágil, estruturas criadas para sustentar projetos de transformação organizacional, agilidade e execução estratégica em contextos de alta complexidade.
+              </p>
             </div>
+
+            <div className="mb-12">
+              <h3 className="text-2xl sm:text-3xl font-title uppercase tracking-wider mb-8">
+                Formação
+              </h3>
+              <p className="text-silver leading-relaxed mb-6">
+                Minha formação foi construída para sustentar a atuação em contextos de alta complexidade, onde método, critério e responsabilidade são indispensáveis.
+              </p>
+              <ul className="space-y-3 text-silver">
+                <li className="flex items-start">
+                  <span className="text-gold mr-3 mt-1">•</span>
+                  <span>Certificação Internacional em Gestão de Projetos (PMP)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold mr-3 mt-1">•</span>
+                  <span>Certificações em métodos ágeis e gestão de produtos</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold mr-3 mt-1">•</span>
+                  <span>Formações internacionais em coaching e desenvolvimento humano</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-gold mr-3 mt-1">•</span>
+                  <span>Especializações em gestão, estratégia e transformação organizacional</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-2xl sm:text-3xl font-title uppercase tracking-wider mb-8">
+                Vida pessoal
+              </h3>
+              <div className="space-y-6 text-silver leading-relaxed">
+                <p>
+                  Aprendi que a clareza necessária para sustentar decisões em organizações é a mesma exigida na vida pessoal.
+                </p>
+                <p>
+                  Não separo trabalho e vida como universos distintos. Ambos são contextos que demandam critério, responsabilidade e escolhas conscientes.
+                </p>
+                <p>
+                  Sou mãe, esposa e profissional, e sei na prática o peso de decisões que precisam se sustentar no tempo. Não na teoria, mas na vida real.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-32 bg-primary text-light">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-title uppercase tracking-wider text-center mb-8">
+              Quando a clareza falta, a execução perde a direção.
+            </h2>
+
+            <p className="text-lg md:text-xl text-silver text-center mb-12 leading-relaxed">
+              Se você sente que o excesso de demandas, decisões ou responsabilidades está impedindo avanço real no negócio ou na vida, talvez o problema não seja esforço, mas falta de clareza e critério para decidir e agir.
+            </p>
+
+            <p className="text-center text-silver text-sm mb-12">
+              Hoje, minha atuação se desdobra em dois contextos.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-primary/50 backdrop-blur-sm border border-silver/20 p-8">
+                <h3 className="text-2xl font-title uppercase tracking-wider mb-4 text-gold">
+                  Consultoria organizacional
+                </h3>
+                <p className="text-lg font-semibold mb-6">
+                  Para organizações e lideranças
+                </p>
+                <p className="text-silver mb-8 leading-relaxed">
+                  Para empresas e líderes que precisam organizar decisões, prioridades e a forma de agir em contextos de alta complexidade.
+                </p>
+                <Link
+                  to="/consultoria"
+                  className="inline-flex items-center space-x-2 bg-gold text-primary px-6 py-3 hover:bg-gold/90 transition-all font-semibold uppercase tracking-wider group text-sm w-full justify-center"
+                >
+                  <span>Agende uma conversa de diagnóstico organizacional</span>
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
+                </Link>
+              </div>
+
+              <div className="bg-primary/50 backdrop-blur-sm border border-silver/20 p-8">
+                <h3 className="text-2xl font-title uppercase tracking-wider mb-4 text-gold">
+                  Mentoria de decisão e carreira
+                </h3>
+                <p className="text-lg font-semibold mb-6">
+                  Para pessoas físicas
+                </p>
+                <p className="text-silver mb-8 leading-relaxed">
+                  Para pessoas que precisam de clareza, critério e direção para decisões que se sustentam no tempo.
+                </p>
+                <Link
+                  to="/mentoria"
+                  className="inline-flex items-center space-x-2 bg-gold text-primary px-6 py-3 hover:bg-gold/90 transition-all font-semibold uppercase tracking-wider group text-sm w-full justify-center"
+                >
+                  <span>Agende uma conversa de diagnóstico pessoal</span>
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
+                </Link>
+              </div>
+            </div>
+
+            <p className="text-center text-silver text-sm mt-12">
+              Uma conversa para entender seu contexto e avaliar, com clareza, se essa forma de atuação faz sentido.
+            </p>
           </div>
         </div>
       </section>

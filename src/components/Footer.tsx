@@ -10,9 +10,11 @@ export default function Footer() {
             <h3 className="text-2xl font-title mb-4 uppercase tracking-wider">
               Ronara Lamounier
             </h3>
-            <p className="text-silver text-sm leading-relaxed">
-              Engenharia de Consciência aplicada a sistemas e pessoas.
-              Transformando paralisia em execução e caos em lucro.
+            <p className="text-light text-sm leading-relaxed mb-2">
+              Clareza de decisão para transformar estratégia em execução real.
+            </p>
+            <p className="text-silver text-sm leading-relaxed italic">
+              Clareza que vira movimento. Movimento que vira resultado.
             </p>
           </div>
 
