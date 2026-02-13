@@ -1,50 +1,80 @@
-import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import Layout from './components/Layout';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
-import Consultoria from './pages/Consultoria';
-import Mentoria from './pages/Mentoria';
+import Sobre from './pages/Sobre';
+import Metodo from './pages/Metodo';
+import ConsultoriaCorporativa from './pages/ConsultoriaCorporativa';
+import MentoriaAltaPerformance from './pages/MentoriaAltaPerformance';
+import FAQ from './pages/FAQ';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home');
-
-  const handleNavigate = (page: string) => {
-    setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   useEffect(() => {
-    const handlePopState = () => {
-      const path = window.location.pathname;
-      if (path === '/consultoria') {
-        setCurrentPage('consultoria');
-      } else if (path === '/mentoria') {
-        setCurrentPage('mentoria');
-      } else {
-        setCurrentPage('home');
-      }
-    };
+    const metaPixelId = 'YOUR_META_PIXEL_ID';
+    const linkedInPartnerId = 'YOUR_LINKEDIN_PARTNER_ID';
 
-    window.addEventListener('popstate', handlePopState);
-    handlePopState();
+    (function(f: any, b: any, e: any, v: any, n?: any, t?: any, s?: any) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      'script',
+      'https://connect.facebook.net/en_US/fbevents.js'
+    );
 
-    return () => window.removeEventListener('popstate', handlePopState);
+    if (window.fbq) {
+      window.fbq('init', metaPixelId);
+      window.fbq('track', 'PageView');
+    }
+
+    const linkedInScript = document.createElement('script');
+    linkedInScript.type = 'text/javascript';
+    linkedInScript.innerHTML = `
+      _linkedin_partner_id = "${linkedInPartnerId}";
+      window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+      window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    `;
+    document.head.appendChild(linkedInScript);
+
+    const linkedInTag = document.createElement('script');
+    linkedInTag.type = 'text/javascript';
+    linkedInTag.async = true;
+    linkedInTag.src = 'https://snap.licdn.com/li.lms-analytics/insight.min.js';
+    document.head.appendChild(linkedInTag);
+
+    const noscript = document.createElement('noscript');
+    noscript.innerHTML = `<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=${linkedInPartnerId}&fmt=gif" />`;
+    document.body.appendChild(noscript);
   }, []);
 
-  useEffect(() => {
-    let path = '/';
-    if (currentPage === 'consultoria') {
-      path = '/consultoria';
-    } else if (currentPage === 'mentoria') {
-      path = '/mentoria';
-    }
-    window.history.pushState({}, '', path);
-  }, [currentPage]);
-
   return (
-    <div className="bg-charcoal">
-      {currentPage === 'home' && <Home onNavigate={handleNavigate} />}
-      {currentPage === 'consultoria' && <Consultoria onNavigate={handleNavigate} />}
-      {currentPage === 'mentoria' && <Mentoria onNavigate={handleNavigate} />}
-    </div>
+    <Router>
+      <ScrollToTop />
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/metodo" element={<Metodo />} />
+          <Route path="/consultoria" element={<ConsultoriaCorporativa />} />
+          <Route path="/mentoria" element={<MentoriaAltaPerformance />} />
+          <Route path="/perguntas-frequentes" element={<FAQ />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

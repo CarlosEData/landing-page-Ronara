@@ -43,6 +43,11 @@ export default function Footer() {
                   Mentoria de Alta Performance
                 </Link>
               </li>
+              <li>
+                <Link to="/perguntas-frequentes" className="text-silver hover:text-gold transition-colors">
+                  Perguntas Frequentes
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -52,7 +57,7 @@ export default function Footer() {
             </h4>
             <div className="flex space-x-4 mb-6">
               <a
-                href="https://instagram.com/ronaraconsultora"
+                href="https://www.instagram.com/ronara.lamounier"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-silver hover:text-gold transition-colors"
@@ -61,7 +66,7 @@ export default function Footer() {
                 <Instagram size={24} />
               </a>
               <a
-                href="https://linkedin.com/in/ronaralamounier"
+                href="https://www.linkedin.com/in/ronaralamounier/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-silver hover:text-gold transition-colors"
@@ -70,7 +75,7 @@ export default function Footer() {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:contato@ronaralamounier.com.br"
+                href="mailto:ronara@gmail.com"
                 className="text-silver hover:text-gold transition-colors"
                 aria-label="Email"
               >
@@ -78,7 +83,7 @@ export default function Footer() {
               </a>
             </div>
             <p className="text-silver text-sm">
-              contato@ronaralamounier.com.br
+              ronara@gmail.com
             </p>
           </div>
         </div>
