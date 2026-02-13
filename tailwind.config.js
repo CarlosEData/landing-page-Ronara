@@ -4,28 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#1A1A1A',
-        silver: '#9B9794',
-        gold: '#F8BF04',
-        light: '#F2F1F3',
+        'charcoal': '#1A1A1A',
+        'off-white': '#F5F5F5',
+        'gold': '#C9A96E',
+        'silver': '#A8A8A8',
       },
       fontFamily: {
-        title: ['Marcellus', 'serif'],
-        body: ['TT Norms', 'Inter', 'system-ui', 'sans-serif'],
+        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
-      animation: {
-        'fade-in': 'fadeIn 0.6s ease-out',
-        'slide-up': 'slideUp 0.8s ease-out',
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        slideUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
+      lineHeight: {
+        'body': '1.5',
+        'heading': '1.2',
       },
     },
   },
