@@ -9,13 +9,12 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-primary/95 backdrop-blur-sm z-50 border-b border-silver/20">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex flex-col">
-            <span className="text-xl font-title text-light tracking-wide">
-              RONARA LAMOUNIER
-            </span>
-            <span className="text-xs text-silver font-body">
-              Clareza de decisão para transformar estratégia em execução real.
-            </span>
+          <Link to="/" className="flex items-center">
+            <img
+              src="/Logo_Amostra_004.png"
+              alt="Ronara Lamounier"
+              className="h-14 w-auto"
+            />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

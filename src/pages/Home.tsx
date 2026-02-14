@@ -61,31 +61,55 @@ export default function Home() {
             Atuação em organizações de alta complexidade
           </h2>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16 lg:gap-20 mb-12 max-w-5xl mx-auto">
-            <img
-              src="/walmart-logo-4.png"
-              alt="Walmart"
-              className="h-12 w-auto grayscale opacity-60"
-            />
-            <img
-              src="/banco_santander_logotipo.svg.png"
-              alt="Santander"
-              className="h-12 w-auto grayscale opacity-60"
-            />
-            <img
-              src="/microsoft_logo_(2012).svg.png"
-              alt="Microsoft"
-              className="h-12 w-auto grayscale opacity-60"
-            />
-            <img
-              src="/logo_bayer.svg.png"
-              alt="Bayer"
-              className="h-12 w-auto grayscale opacity-60"
-            />
-            <img
-              src="/gpa_logo_2013.svg.png"
-              alt="GPA"
-              className="h-12 w-auto grayscale opacity-60"
-            />
+            <div className="h-20 w-44 flex items-center justify-center">
+              <img
+                src="/granado-pharmacias-logo-png_seeklogo-245990.png"
+                alt="Granado"
+                className="max-h-20 max-w-44 w-auto h-auto grayscale opacity-60 object-contain"
+              />
+            </div>
+            <div className="h-20 w-44 flex items-center justify-center">
+              <img
+                src="/logostix.png"
+                alt="Stixx"
+                className="max-h-20 max-w-44 w-auto h-auto grayscale opacity-60 mix-blend-multiply object-contain"
+              />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img
+                src="/walmart-logo-4.png"
+                alt="Walmart"
+                className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain"
+              />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img
+                src="/banco_santander_logotipo.svg.png"
+                alt="Santander"
+                className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain"
+              />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img
+                src="/microsoft_logo_(2012).svg.png"
+                alt="Microsoft"
+                className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain"
+              />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img
+                src="/logo_bayer.svg.png"
+                alt="Bayer"
+                className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain"
+              />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img
+                src="/gpa_logo_2013.svg.png"
+                alt="GPA"
+                className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain"
+              />
+            </div>
           </div>
           <p className="text-center text-silver text-base max-w-3xl mx-auto mb-2">
             Projetos de transformação organizacional, governança, agilidade e execução estratégica.
@@ -384,14 +408,14 @@ export default function Home() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-primary/50 backdrop-blur-sm border border-silver/20 p-8">
+              <div className="bg-primary/50 backdrop-blur-sm border border-silver/20 p-8 flex flex-col">
                 <h3 className="text-2xl font-title uppercase tracking-wider mb-4 text-gold">
                   Consultoria organizacional
                 </h3>
                 <p className="text-lg font-semibold mb-6">
                   Para organizações e lideranças
                 </p>
-                <p className="text-silver mb-8 leading-relaxed">
+                <p className="text-silver mb-8 leading-relaxed flex-grow">
                   Para empresas e líderes que precisam organizar decisões, prioridades e execução em contextos de alta complexidade.
                 </p>
                 <Link
@@ -403,14 +427,14 @@ export default function Home() {
                 </Link>
               </div>
 
-              <div className="bg-primary/50 backdrop-blur-sm border border-silver/20 p-8">
+              <div className="bg-primary/50 backdrop-blur-sm border border-silver/20 p-8 flex flex-col">
                 <h3 className="text-2xl font-title uppercase tracking-wider mb-4 text-gold">
                   Mentoria de decisão e carreira
                 </h3>
                 <p className="text-lg font-semibold mb-6">
                   Para pessoas físicas
                 </p>
-                <p className="text-silver mb-8 leading-relaxed">
+                <p className="text-silver mb-8 leading-relaxed flex-grow">
                   Para pessoas que precisam de clareza, critério e direção para decisões que se sustentam no tempo.
                 </p>
                 <Link

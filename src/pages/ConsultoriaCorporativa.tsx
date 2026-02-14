@@ -57,11 +57,27 @@ export default function ConsultoriaCorporativa() {
             Empresas que confiaram na execução
           </p>
           <div className="flex flex-wrap justify-center items-center gap-12 max-w-4xl mx-auto">
-            <img src="/walmart-logo-4.png" alt="Walmart" className="h-10 w-auto grayscale opacity-60" />
-            <img src="/banco_santander_logotipo.svg.png" alt="Santander" className="h-10 w-auto grayscale opacity-60" />
-            <img src="/microsoft_logo_(2012).svg.png" alt="Microsoft" className="h-10 w-auto grayscale opacity-60" />
-            <img src="/logo_bayer.svg.png" alt="Bayer" className="h-10 w-auto grayscale opacity-60" />
-            <img src="/gpa_logo_2013.svg.png" alt="GPA" className="h-10 w-auto grayscale opacity-60" />
+            <div className="h-20 w-44 flex items-center justify-center">
+              <img src="/granado-pharmacias-logo-png_seeklogo-245990.png" alt="Granado" className="max-h-20 max-w-44 w-auto h-auto grayscale opacity-60 object-contain" />
+            </div>
+            <div className="h-20 w-44 flex items-center justify-center">
+              <img src="/logostix.png" alt="Stixx" className="max-h-20 max-w-44 w-auto h-auto grayscale opacity-60 mix-blend-multiply object-contain" />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img src="/walmart-logo-4.png" alt="Walmart" className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain" />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img src="/banco_santander_logotipo.svg.png" alt="Santander" className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain" />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img src="/microsoft_logo_(2012).svg.png" alt="Microsoft" className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain" />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img src="/logo_bayer.svg.png" alt="Bayer" className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain" />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img src="/gpa_logo_2013.svg.png" alt="GPA" className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain" />
+            </div>
           </div>
         </div>
       </section>
@@ -338,11 +354,27 @@ export default function ConsultoriaCorporativa() {
             EMPRESAS QUE JÁ CONFIARAM
           </p>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16 max-w-5xl mx-auto">
-            <img src="/walmart-logo-4.png" alt="Walmart" className="h-12 w-auto grayscale opacity-60" />
-            <img src="/banco_santander_logotipo.svg.png" alt="Santander" className="h-12 w-auto grayscale opacity-60" />
-            <img src="/microsoft_logo_(2012).svg.png" alt="Microsoft" className="h-12 w-auto grayscale opacity-60" />
-            <img src="/logo_bayer.svg.png" alt="Bayer" className="h-12 w-auto grayscale opacity-60" />
-            <img src="/gpa_logo_2013.svg.png" alt="GPA" className="h-12 w-auto grayscale opacity-60" />
+            <div className="h-20 w-44 flex items-center justify-center">
+              <img src="/granado-pharmacias-logo-png_seeklogo-245990.png" alt="Granado" className="max-h-20 max-w-44 w-auto h-auto grayscale opacity-60 object-contain" />
+            </div>
+            <div className="h-20 w-44 flex items-center justify-center">
+              <img src="/logostix.png" alt="Stixx" className="max-h-20 max-w-44 w-auto h-auto grayscale opacity-60 mix-blend-multiply object-contain" />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img src="/walmart-logo-4.png" alt="Walmart" className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain" />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img src="/banco_santander_logotipo.svg.png" alt="Santander" className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain" />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img src="/microsoft_logo_(2012).svg.png" alt="Microsoft" className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain" />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img src="/logo_bayer.svg.png" alt="Bayer" className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain" />
+            </div>
+            <div className="h-16 w-40 flex items-center justify-center">
+              <img src="/gpa_logo_2013.svg.png" alt="GPA" className="max-h-16 max-w-40 w-auto h-auto grayscale opacity-60 object-contain" />
+            </div>
           </div>
         </div>
       </section>

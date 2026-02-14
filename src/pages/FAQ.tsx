@@ -281,27 +281,27 @@ export default function FAQ() {
             <h2 className="text-2xl sm:text-3xl font-title uppercase tracking-wider mb-8">
               Ainda tem dúvidas?
             </h2>
-            <p className="text-silver mb-8">
+            <p className="text-silver mb-10 text-lg">
               Entre em contato para esclarecer qualquer questão sobre consultoria ou mentoria.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-stretch max-w-3xl mx-auto">
               <Link
                 to="/consultoria"
-                className="inline-flex items-center justify-center space-x-2 bg-gold text-primary px-8 py-3 hover:bg-gold/90 transition-all font-semibold uppercase tracking-wider group text-sm"
+                className="flex-1 inline-flex items-center justify-center space-x-2 bg-gold text-primary px-8 py-4 hover:bg-gold/90 transition-all font-semibold uppercase tracking-wider group text-sm"
               >
                 <span>Consultoria Corporativa</span>
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
               </Link>
               <Link
                 to="/mentoria"
-                className="inline-flex items-center justify-center space-x-2 border-2 border-gold text-gold px-8 py-3 hover:bg-gold hover:text-primary transition-all font-semibold uppercase tracking-wider group text-sm"
+                className="flex-1 inline-flex items-center justify-center space-x-2 border-2 border-gold text-gold px-8 py-4 hover:bg-gold hover:text-primary transition-all font-semibold uppercase tracking-wider group text-sm"
               >
                 <span>Mentoria 1:1</span>
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
               </Link>
               <Link
                 to="/sobre"
-                className="inline-flex items-center justify-center space-x-2 border-2 border-silver/30 text-silver px-8 py-3 hover:bg-silver/10 transition-all font-semibold uppercase tracking-wider group text-sm"
+                className="flex-1 inline-flex items-center justify-center space-x-2 border-2 border-silver/30 text-silver px-8 py-4 hover:bg-silver/10 transition-all font-semibold uppercase tracking-wider group text-sm"
               >
                 <span>Sobre</span>
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
